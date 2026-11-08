@@ -1,16 +1,22 @@
-## Hi there 👋
+<img width="1200" height="360" alt="banner" src="https://github.com/user-attachments/assets/155436ce-38b5-41af-a593-73e75dac797d" />
+<p align="center">
+  I build projects with real-world impact, and lately I'm learning computer vision & ML one weekend project at a time :)
+</p>
 
-<!--
-**sarah-vanvelzer/sarah-vanvelzer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## My Toolkit
 
-Here are some ideas to get you started:
+- **Languages:** Python, TypeScript, Java, C/C++, Swift, SQL, R
+- **Building:** React Native, Expo, Next.js, Supabase, SwiftUI, Git
+- **ML & computer vision:** scikit-learn, pandas, OpenCV, MediaPipe
+- **Design:** Figma
+- **Business & finance:** Excel, financial statement analysis, securities valuation, forecasting
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sarah-vanvelzer/sarah-vanvelzer/output/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sarah-vanvelzer/sarah-vanvelzer/output/snake-light.svg">
+    <img alt="a snake eating my github contribution graph" src="https://raw.githubusercontent.com/sarah-vanvelzer/sarah-vanvelzer/output/snake-light.svg">
+  </picture>
+</p>
+
+<p align="center">Thanks for visiting!</p>
