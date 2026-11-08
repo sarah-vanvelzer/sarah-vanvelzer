@@ -8,7 +8,7 @@
 - **ML & computer vision:** scikit-learn, pandas, OpenCV, MediaPipe
 - **Design:** Figma, Canva
 
-## Watch My Snake For Me
+## Watch My Snake for Me?
 
 <p align="center">
   <picture>
