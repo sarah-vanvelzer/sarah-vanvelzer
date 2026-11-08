@@ -1,7 +1,5 @@
 <img width="1200" height="360" alt="banner" src="https://github.com/user-attachments/assets/155436ce-38b5-41af-a593-73e75dac797d" />
-<p align="center">
-  I build projects with real-world impact, and lately I'm learning computer vision & ML one weekend project at a time :)
-</p>
+<h3 align="center">I build projects with real-world impact, and lately I'm learning computer vision & ML one weekend project at a time :)</h3>
 
 ## My Toolkit
 
@@ -10,7 +8,7 @@
 - **ML & computer vision:** scikit-learn, pandas, OpenCV, MediaPipe
 - **Design:** Figma, Canva
 
-## Watch My Snake Eat My Commits
+## Watch My Snake For Me
 
 <p align="center">
   <picture>
