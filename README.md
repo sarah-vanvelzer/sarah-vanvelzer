@@ -1,5 +1,5 @@
 <img width="1200" height="360" alt="banner" src="https://github.com/user-attachments/assets/155436ce-38b5-41af-a593-73e75dac797d" />
-<h3 align="center">I build projects with real-world impact. Currently exploring computer vision & ML :)</h3>
+<h3 align="center">Striving to build projects with real-world impact. Currently exploring computer vision & ML :)</h3>
 
 ## My Toolkit
 
