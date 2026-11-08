@@ -14,8 +14,8 @@ import urllib.request
 CELL = 12          # size of each square (and each snake segment)
 GAP = 3            # space between squares
 PAD = 8            # space around the grid
-STEP = 0.07        # seconds per move (smaller = faster snake)
-PAUSE = 1.5        # seconds to wait before the snake comes back
+STEP = 0.12        # seconds per move (bigger = slower snake)
+PAUSE = 0.8        # seconds to wait after the tail leaves, before it comes back
 START_LENGTH = 3   # how long the snake is before it eats anything
 
 THEMES = {
@@ -103,9 +103,11 @@ def render(grid, cols, theme):
 
     max_len = START_LENGTH + len(meals)
     exit_row = route[-1][1]
-    route += [(cols + i, exit_row) for i in range(max_len + 1)]   # slide off-screen
+    first_offscreen = len(route)                                   # index of first cell past the grid
+    route += [(cols + i, exit_row) for i in range(max_len + 1)]   # room for the head while the tail leaves
     moves = len(route) - 1
-    total = (moves + max_len) * STEP + PAUSE
+    # the loop restarts as soon as the tail has left the board (plus a short pause)
+    total = (first_offscreen + max_len - 1) * STEP + PAUSE
 
     width = PAD * 2 + cols * (CELL + GAP) - GAP
     height = PAD * 2 + 7 * (CELL + GAP) - GAP
@@ -139,12 +141,16 @@ def render(grid, cols, theme):
     travel = moves * STEP
     for k in reversed(range(max_len)):
         start, end = k * STEP, k * STEP + travel
+        if end <= total:
+            points, times = "0;0;1;1", f"0;{frac(start)};{frac(end)};1"
+        else:   # loop ends before this segment finishes its (off-screen) trip
+            points, times = f"0;0;{(total - start) / travel:.5f}", f"0;{frac(start)};1"
         show = (f'<animate attributeName="opacity" values="0;1" keyTimes="0;{frac(appears[k])}" '
                 f'dur="{total:.2f}s" calcMode="discrete" repeatCount="indefinite"/>') if k >= START_LENGTH else ""
         out.append(
             f'<rect x="0" y="0" width="{CELL}" height="{CELL}" rx="3" fill="{colours[k]}" opacity="{0 if show else 1}">'
             f'<animateMotion dur="{total:.2f}s" repeatCount="indefinite" calcMode="linear" '
-            f'keyPoints="0;0;1;1" keyTimes="0;{frac(start)};{frac(end)};1">'
+            f'keyPoints="{points}" keyTimes="{times}">'
             f'<mpath xlink:href="#route" href="#route"/></animateMotion>{show}</rect>')
 
     out.append('</g></svg>')
