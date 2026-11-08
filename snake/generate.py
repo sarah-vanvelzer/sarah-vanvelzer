@@ -21,15 +21,15 @@ START_LENGTH = 3   # how long the snake is before it eats anything
 THEMES = {
     "light": {
         "empty": "#ece7dc",
-        "levels": ["#f2a7c6", "#e8782a", "#d6247d", "#3b4fa0"],
-        "head": "#1f1f1f",
-        "body": "#1f1f1f",
+        "levels": ["#5ec0d5", "#c7d250", "#dd94f9", "#f0be4d"],   # few commits -> lots
+        "head": "#e05eb1",
+        "body": "#e05eb1",
     },
     "dark": {
         "empty": "#2a2a2a",
-        "levels": ["#7a1f4a", "#e8782a", "#d6247d", "#7fb8bd"],
-        "head": "#f2e9d8",
-        "body": "#f2e9d8",
+        "levels": ["#5ec0d5", "#c7d250", "#dd94f9", "#f0be4d"],
+        "head": "#e05eb1",
+        "body": "#e05eb1",
     },
 }
 
