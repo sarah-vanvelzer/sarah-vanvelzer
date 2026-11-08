@@ -16,13 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: draw the contribution snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-light.svg?color_snake=#1f1f1f&color_dots=#ece7dc,#f2a7c6,#e8782a,#d6247d,#3b4fa0
-            dist/snake-dark.svg?color_snake=#f2e9d8&color_dots=#2a2a2a,#7a1f4a,#e8782a,#d6247d,#7fb8bd
+      - name: get the code
+        uses: actions/checkout@v4
+
+      - name: draw the growing collage snake
+        run: python3 snake/generate.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOGIN: ${{ github.repository_owner }}
 
       - name: save it to the output branch
         uses: crazy-max/ghaction-github-pages@v4
