@@ -8,8 +8,9 @@
 - **Languages:** Python, TypeScript, Java, C/C++, Swift, SQL, R
 - **Building:** React Native, Expo, Next.js, Supabase, SwiftUI, Git
 - **ML & computer vision:** scikit-learn, pandas, OpenCV, MediaPipe
-- **Design:** Figma
-- **Business & finance:** Excel, financial statement analysis, securities valuation, forecasting
+- **Design:** Figma, Canva
+
+## Watch My Snake Eat My Commits
 
 <p align="center">
   <picture>
