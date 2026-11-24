@@ -3,7 +3,7 @@
 
 ## My Toolkit
 
-- **Languages:** Python, TypeScript, Java, C/C++, Swift, SQL, R
+- **Languages:** Python, TypeScript, Java, C/C++, Swift, SQL, R, Swift
 - **Building:** React Native, Expo, Next.js, Supabase, Vercel, SwiftUI, Git, GitHub Actions
 - **ML & AI:** scikit-learn, pandas, OpenCV, MediaPipe, Gemini API, pgvector
 - **Design:** Figma, Canva
