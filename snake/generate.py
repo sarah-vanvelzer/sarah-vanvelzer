@@ -21,7 +21,7 @@ START_LENGTH = 3   # how long the snake is before it eats anything
 THEMES = {
     "light": {
         "empty": "#ece7dc",
-        "levels": ["#5ec0d5", "#c7d250", "#dd94f9", "#f0be4d"],   # few commits -> lots
+        "levels": ["#5ec0d5", "#b42eb6", "#dd94f9", "#f0be4d"],   # few commits -> lots
         "head": "#e05eb1",
         "body": "#e05eb1",
     },
